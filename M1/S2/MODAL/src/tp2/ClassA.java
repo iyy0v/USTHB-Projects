@@ -35,7 +35,10 @@ public class ClassA {
 	}
 	
 	public void AsetsX2(int n, ClassB b) {
-		b.setX2(n);
+		if(n != b.getX2()) {
+			b.setX2(n);
+		}
+		System.out.println("ALL GOOOOOOOOD !!!");
 	}
 	public void AsetsStr2(String s, ClassB b) {
 		b.setStr2(s);

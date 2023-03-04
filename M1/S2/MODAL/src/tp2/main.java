@@ -11,7 +11,7 @@ public class main {
 		
 		Logger logger = new Logger();
 		
-		Class clss = Dummy.class;
+		Class<?> clss = Dummy.class;
 		logger.propClass(clss);
 		
 		
@@ -36,6 +36,8 @@ public class main {
 		
 		logger.logClass(ClassA.class);
 		logger.logClass(ClassB.class);
+		
+		logger.logRelations(ClassA.class, ClassB.class);
 		
 	}
 }
