@@ -1,10 +1,8 @@
 package tp2;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Method;
 
 public class SourceCodeExtractor {
     
@@ -17,7 +15,6 @@ public class SourceCodeExtractor {
         StringBuilder sourceCode = new StringBuilder();
         String line;
         boolean inMethod = false;
-        int count = 0;
         while ((line = reader.readLine()) != null) {
             if (inMethod) {
                 if (line.trim().startsWith("}")) {

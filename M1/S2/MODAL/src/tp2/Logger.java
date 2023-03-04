@@ -6,6 +6,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
+import java.util.Arrays;
 
 public class Logger {
 
@@ -113,32 +114,89 @@ public class Logger {
 			System.out.println(i);
 		}
 	}
-	public void logRelations(Class<?> prototype1, Class<?> prototype2) {
-		String name1 = prototype1.getSimpleName();
-		String name2 = prototype2.getSimpleName();
+	private String[] getRelations(Class<?> prototype1, Class<?> prototype2) throws IOException {
+		Field[] fields1 = prototype1.getDeclaredFields();
 		Method[] methods1 = prototype1.getDeclaredMethods();
 		Method[] methods2 = prototype2.getDeclaredMethods();
+		String[] relations = new String[] {};
+		
+		for(int i = 0; i < methods1.length; i++) {
+			String methodCode = SourceCodeExtractor.extractSourceCode(prototype1, methods1[i].getName());
+			System.out.println(methodCode);
+			for(int j = 0; j < methods2.length; j++) {
+				if(methodCode.contains(methods2[j].getName())) {
+					for(int k = 0; k < fields1.length; k++) {
+						if(fields1[k].getType() == prototype2 && methodCode.contains(fields1[k].getName() + "." + methods2[j].getName())) {
+							System.out.println(methods1[i].getName() + " => " + methods2[j].getName());
+							relations = Arrays.copyOf(relations, relations.length + 1);
+							relations[relations.length-1] = methods1[i].getName() + " " + methods2[j].getName();
+						}
+					}
+					for(int k = 0; k < methods1[i].getParameterCount(); k++) {
+						if(methods1[i].getParameters()[k].getType() == prototype2 && methodCode.contains(methods1[i].getParameters()[k].getName() + "." + methods2[j].getName())) {
+							System.out.println(methods1[i].getName() + " => " + methods2[j].getName());
+							relations = Arrays.copyOf(relations, relations.length + 1);
+							relations[relations.length-1] = methods1[i].getName() + " " + methods2[j].getName();
+						}
+					}
+				}
+			}
+		}
+		return relations;
+	}
+	
+	public void logRelations(Class<?> prototype1, Class<?> prototype2) throws IOException {
+		String[] relations1 = this.getRelations(prototype1, prototype2);
+		String[] relations2 = this.getRelations(prototype2, prototype1);
+		
 		try {
-			FileWriter writer = new FileWriter("Relations_" + name1 + "_" + name2 + ".xml", false);
-			SourceCodeExtractor extractor = new SourceCodeExtractor();
+			FileWriter writer = new FileWriter("Relations_" + prototype1.getSimpleName() + "_" + prototype2.getSimpleName() + ".xml", false);
 			
 			writer.write("<Relations>");
-				writer.write("<" + name1 + "To" + name2 + ">");
-				for(int i = 0; i < methods1.length; i++) {
-					String methodCode = extractor.extractSourceCode(prototype1, methods1[i].getName());
-					System.out.println(methods1[i].getName() + " {");
-					System.out.println(methodCode);
-					System.out.println("}");
-				}
-				writer.write("</" + name1 + "To" + name2 + ">");
-				writer.write("<" + name2 + "To" + name1 + ">");
-				for(int i = 0; i < methods2.length; i++) {
-					String methodCode = extractor.extractSourceCode(prototype2, methods2[i].getName());
-					System.out.println(methods2[i].getName() + " {");
-					System.out.println(methodCode);
-					System.out.println("}");
-				}
-				writer.write("</" + name2 + "To" + name1 + ">");
+				writer.write("<" + prototype1.getSimpleName() + "_To_" + prototype2.getSimpleName() + ">");
+					for(String relation: relations1) {
+						writer.write("<Relation>");
+							writer.write("<Source>");
+								writer.write("<Class>");
+									writer.write(prototype1.getName());
+								writer.write("</Class>");
+								writer.write("<Method>");
+									writer.write(relation.split(" ")[0]);
+								writer.write("</Method>");
+							writer.write("</Source>");
+							writer.write("<Target>");
+								writer.write("<Class>");
+									writer.write(prototype2.getName());
+								writer.write("</Class>");
+								writer.write("<Method>");
+									writer.write(relation.split(" ")[1]);
+								writer.write("</Method>");
+							writer.write("</Target>");
+						writer.write("</Relation>");
+					}
+				writer.write("</" + prototype1.getSimpleName() + "_To_" + prototype2.getSimpleName() + ">");
+				writer.write("<" + prototype2.getSimpleName() + "_To_" + prototype1.getSimpleName() + ">");
+					for(String relation: relations2) {
+						writer.write("<Relation>");
+							writer.write("<Source>");
+								writer.write("<Class>");
+									writer.write(prototype2.getName());
+								writer.write("</Class>");
+								writer.write("<Method>");
+									writer.write(relation.split(" ")[0]);
+								writer.write("</Method>");
+							writer.write("</Source>");
+							writer.write("<Target>");
+								writer.write("<Class>");
+									writer.write(prototype1.getName());
+								writer.write("</Class>");
+								writer.write("<Method>");
+									writer.write(relation.split(" ")[1]);
+								writer.write("</Method>");
+							writer.write("</Target>");
+						writer.write("</Relation>");
+					}
+				writer.write("</" + prototype2.getSimpleName() + "_To_" + prototype1.getSimpleName() + ">");
 			writer.write("</Relations>");
 			
 			writer.close();

@@ -3,6 +3,7 @@ package tp2;
 public class ClassB {
 	private int x2;
 	private String str2;
+	private ClassA a2;
 	static int countB = 0;
 	
 	ClassB() {
@@ -22,12 +23,18 @@ public class ClassB {
 	public String getStr2() {
 		return str2;
 	}
+	public ClassA getA2() {
+		return a2;
+	}
 	
 	public void setX2(int n) {
 		x2 = n;
 	}
 	public void setStr2(String s) {
 		str2 = s;
+	}
+	public void setA2(ClassA a) {
+		a2 = a;
 	}
 	
 	public void showValues() {
@@ -40,5 +47,6 @@ public class ClassB {
 	public void BsetsStr1(String s, ClassA a) {
 		a.setStr1(s);
 	}
+	
 	
 }

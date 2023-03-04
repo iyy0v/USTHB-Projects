@@ -1,7 +1,9 @@
 package tp2;
 
+import java.io.IOException;
+
 public class main {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		Dummy d1 = new Dummy();
 		Dummy d2 = new Dummy(5,"Hello World !");
 		
@@ -39,5 +41,7 @@ public class main {
 		
 		logger.logRelations(ClassA.class, ClassB.class);
 		
+		System.out.println("\n========================================\n");
+		System.out.println("Everything has been executed succesfully.\n");
 	}
 }
