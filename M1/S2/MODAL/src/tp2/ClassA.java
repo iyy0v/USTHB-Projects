@@ -43,12 +43,10 @@ public class ClassA {
 	public void setB1(ClassB b) {
 		b1 = b;
 	}
-	
 	public void showValues() {
 		System.out.println("x1 = " + x1 + ", str1 = '" + str1 + "'");
 		b1.showValues();
 	}
-	
 	public void AsetsX2(int n, ClassB b) {
 		if(n != b.getX2()) {
 			b.setX2(n);

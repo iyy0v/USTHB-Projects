@@ -20,7 +20,7 @@ public class main {
 		ClassA a = new ClassA();
 		ClassB b = new ClassB();
 		
-		a.showValues();
+		
 		b.showValues();
 		
 		a.AsetsX2(10, b);
@@ -29,7 +29,7 @@ public class main {
 		b.BsetsX1(5, a);
 		b.BsetsStr1("CLASS A RULES !", a);
 		
-		a.showValues();
+		
 		b.showValues();
 		
 		
