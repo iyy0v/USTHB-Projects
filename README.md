@@ -3,7 +3,7 @@
 This repository contains my university projects that I made/helped make during my Bachelor + Master curriculum.
 <br />
 # Specialities : 
-Bachelor : Computer Science (Informatique aka ACAD)
+Bachelor : Computer Science (Informatique aka ACAD) <br />
 Master : Sofware Engineering (Ingénierie Logiciel aka IL)
 <br />
 # University : 
