@@ -1,0 +1,47 @@
+<score>
+    <game>
+        <time>23 : 42</time>
+        <team1>New York Giants</team1>
+        <team2>Philadelphia Eagles</team2>
+        <rslt11>0</rslt11>
+        <rslt21>4</rslt21>
+        <rslt31>0</rslt31>
+        <rslt41>0</rslt41>
+        <rslt12>2</rslt12>
+        <rslt22>3</rslt22>
+        <rslt32>0</rslt32>
+        <rslt42>0</rslt42>
+    </game>
+    <game>
+        <time>Terminé</time>
+        <team1>Pittsburgh Steeler</team1>
+        <team2>Las Vegas Raiders</team2>
+        <rslt11>0</rslt11>
+        <rslt21>3</rslt21>
+        <rslt31>0</rslt31>
+        <rslt41>10</rslt41>
+        <rslt12>7</rslt12>
+        <rslt22>3</rslt22>
+        <rslt32>6</rslt32>
+        <rslt42>0</rslt42>
+    </game>
+    <game>
+        <time>Terminé</time>
+        <team1>Buffalo Bills</team1>
+        <team2>Seattle Seahawks</team2>
+        <rslt11>1</rslt11>
+        <rslt21>5</rslt21>
+        <rslt31>5</rslt31>
+        <rslt41>7</rslt41>
+        <rslt12>2</rslt12>
+        <rslt22>1</rslt22>
+        <rslt32>6</rslt32>
+        <rslt42>3</rslt42>
+    </game>
+    <actu>
+        <info>NFL community reacts to J.J. Watt announcing his retirement after 12 seasons.</info>
+    </actu>
+    <actu>
+        <info>Raiders coach Josh McDaniels doesn't dismiss possibility of benching QB Derek Carr.</info>
+    </actu>
+</score>
