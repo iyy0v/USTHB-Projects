@@ -9,28 +9,28 @@ This repository contains my university projects that I made/helped make during m
 - [Projects](#projects-list)
 - [Contact](#contact)
 
-## Specialities : 
-Bachelor : Computer Science (Informatique aka ACAD) <br />
+## Specialities (LMD)
+Bachelor (Licence) : Computer Science (Informatique aka ACAD) <br />
 Master : Sofware Engineering (Ingénierie Logiciel aka IL)
 
-## University : 
+## University
 University Of Science And Technology Houari Boumediene ([USTHB](https://www.usthb.dz))
 
 ## Projects List
-### L1 Projects
+### L1 :
 - 1
-### L2 Projects
-- 1
-
-### L3 Projects
+### L2 :
 - 1
 
-### M1 Projects
+### L3 :
+- 1
+
+### M1 :
 - **LiveScore** : a website about american football where you find informations about the sport and live score of on going matches. Made using HTML, CSS, JavaScript and XML for data storing. <br /> 
 **PS:** You will need to run a live server for the score to be real time. You can use [WAMP](https://www.wampserver.com/en/) or the VSCode [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension. 
 - 1
 
-### M2 Projects
+### M2 :
 (still undergoing...)
 
 ## Contact
