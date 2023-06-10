@@ -10,8 +10,8 @@ This repository contains my university projects that I made/helped make during m
 - [Contact](#contact)
 
 ## Specialities (LMD)
-Bachelor (Licence) : Computer Science (Informatique aka ACAD) <br />
-Master : Sofware Engineering (Ingénierie Logiciel aka IL)
+**Bachelor (Licence) :** Computer Science (Informatique aka ACAD) <br />
+**Master :** Sofware Engineering (Ingénierie Logiciel aka IL)
 
 ## University
 University Of Science And Technology Houari Boumediene ([USTHB](https://www.usthb.dz))
