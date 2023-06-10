@@ -26,8 +26,10 @@ University Of Science And Technology Houari Boumediene ([USTHB](https://www.usth
 - 1
 
 ### M1 :
-- **LiveScore** : a website about american football where you can find the history of the sport, solve a quiz about it and check out live score of ongoing matches. Made using HTML, CSS, JavaScript and XML for data storing. <br /> 
+- **LiveScore** (WEB AV): a website about american football where you can find the history of the sport, solve a quiz about it and check out live score of ongoing matches. Made using HTML, CSS, JavaScript and XML for data storing. <br /> 
 **PS:** You will need to run a live server for the score to be real time. You can use [WAMP](https://www.wampserver.com/en/) or the VSCode [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension. 
+- **SQL3** (BDA): a project about the management of a database containing gyms data where I explored different aspects of Oracle SQL3 including references, nested tables, user-defined types, functions and much more.
+- **JUnit** (MODAL): a bunch of Java scripts for testing classes, generating logs, extracting relations between classes and more.
 - 1
 
 ### M2 :
