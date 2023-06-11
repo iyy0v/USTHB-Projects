@@ -26,8 +26,9 @@ University Of Science And Technology Houari Boumediene ([USTHB](https://www.usth
 - 1
 
 ### M1 :
-- **LiveScore** (WEB AV): a website about american football where you can find the history of the sport, solve a quiz about it and check out live score of ongoing matches. Made using HTML, CSS, JavaScript and XML for data storing. <br /> 
-**PS:** You will need to run a live server for the score to be real time. You can use [WAMP](https://www.wampserver.com/en/) or the VSCode [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension. 
+- **LiveScore** (WEB AV): a simple website about american football where you can find the history of the sport, solve a quiz about it and check out live score of ongoing matches. Made using HTML, CSS, JavaScript and XML for data storing. <br /> 
+**PS:** You will need to run a live server for the score to be real time. You can use [WAMP](https://www.wampserver.com/en/) or the VSCode [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension.
+- **SortCmp** (CMPLX): a project written in C which contains various sorting algorithms with a timer in order to compare their runtime based on their complexities. There are also some graphs with the results we obtained in our tests.
 - **SYS Scripts** (SE): a bunch of C scripts where I explored and learned how to manipulate processes (parent/child), threads, pipes and the way they work while performing certain tasks given as exercises during my practical OS class.
 - **Project Plans** (GP): some plans made using [MS Project](https://www.microsoft.com/en-ww/microsoft-365/project/project-management-software) for my Project Management class. <br />
 **PS:** Some of the earlier versions might have got overwritten.
