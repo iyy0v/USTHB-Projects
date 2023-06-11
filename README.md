@@ -32,7 +32,7 @@ University Of Science And Technology Houari Boumediene ([USTHB](https://www.usth
 - **SYS Scripts** (SE): a bunch of C scripts where I explored and learned how to manipulate processes (parent/child), threads, pipes and the way they work while performing certain tasks given as exercises during my practical OS class.
 - **Project Plans** (GP): some plans made using [MS Project](https://www.microsoft.com/en-ww/microsoft-365/project/project-management-software) for my Project Management class. <br />
 **PS:** Some of the earlier versions might have got overwritten.
-- **SQL3** (BDA): a project about the management of a database containing gyms data where I explored different aspects of Oracle SQL3 including references, nested tables, user-defined types, functions and much more. I also used UML for modelisation.
+- **SQL3** (BDA): a project about the management of a database containing gyms data where I explored different aspects of SQL3 including references, nested tables, user-defined types, functions and much more using [Oracle DBXE](https://www.oracle.com/database/technologies/appdev/xe.html). I also used UML for modelisation.
 - **JUnit** (MODAL): a bunch of Java scripts for testing classes, generating logs, extracting relations between classes and more.
 - **PCL Compiler** (COMPIL2): a PCL compiler created from scratch using [C](https://www.mingw-w64.org) + [Flex](https://github.com/westes/flex) & [Bison](https://www.gnu.org/software/bison) which analyzes a PCL code, creates its Symbol Table, generates its intermediary code in a form of quadruplets, optimizes it then converts it to x86 machine code. <br /> 
 **Versions:** GCC 8.2.0 , GNU Flex 2.5.4 ,  GNU Bison 2.4.1
