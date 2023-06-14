@@ -18,7 +18,8 @@ University Of Science And Technology Houari Boumediene ([USTHB](https://www.usth
 
 ## Projects List
 ### L1 :
-- 1
+- **Algo Scripts** (ALGO): scripts written in C where I learned/practiced the basics of algorithmics and coding + a small project for library management.
+- **MathProg** (OPM): a project for my Mathematical Programming class which combines three subjects: Primitive Recursive functions, Turing Machines and Mathematical Tasks solved using [OCaml](https://ocaml.org).
 ### L2 :
 - 1
 
