@@ -1,0 +1,50 @@
+#let rec fact n=if n=0 then 1 else n*fact(n-1);;
+fact : int -> int = <fun>
+#fact 5;;
+- : int = 120
+
+#trace "fact";;
+The function fact is now traced.
+- : unit = ()
+#fact 4;;
+fact <-- 4
+fact <-- 3
+fact <-- 2
+fact <-- 1
+fact <-- 0
+fact --> 1
+fact --> 1
+fact --> 2
+fact --> 6
+fact --> 24
+- : int = 24
+
+#let rec exp x y=if y=0 then 1 else x*exp x (y-1);;
+exp : int -> int -> int = <fun>
+#exp 2 3;;
+- : int = 8
+
+let rec sigma x=if x=0 then 0 else x+sigma(x-1);;
+#sigma : int -> int = <fun>
+sigma 4;;
+#- : int = 10
+
+#let rec sigma2 x y=if y=x+1 then 0 else if x=y+1 then 0 else if y>x then y-1+sigma2 x (y-1) else x-1+sigma2(x-1) y;;
+sigma2 : int -> int -> int = <fun>
+#sigma2 10 12;;
+- : int = 11
+sigma2 10 11;;
+#- : int = 0
+
+let rec fib n=if n=0 then 0 else if n=1 then 1 else fib(n-1)+fib(n-2);;
+#fib : int -> int = <fun>
+#fib 4;;
+- : int = 3
+
+let rec pgcd x y= if x=y then x else if x>y then pgcd(x-y) y else pgcd(y-x) x;;
+pgcd : int -> int -> int = <fun>
+#pgcd 2 4;;
+- : int = 2
+
+*********THIS ONE ABOVE(PGCD) WILL CRASH THE IDE IF U SET ONE OF THE VARIABLES IS 0**********
+
