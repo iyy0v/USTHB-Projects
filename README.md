@@ -21,8 +21,9 @@ University Of Science And Technology Houari Boumediene ([USTHB](https://www.usth
 - **Algo Scripts** (ALGO): scripts written in C where I learned/practiced the basics of algorithmics and coding + a small project for library management.
 - **MathProg** (OPM): a project for my Mathematical Programming class which combines three subjects: Primitive Recursive functions, Turing Machines and Mathematical Tasks solved using [Caml](https://caml.inria.fr).
 ### L2 :
-- 1
-
+- ExpEval (ALGO2): a project written in C for my Algorithmics class which verifies the validity of an arithmetic expression, converts it from its infix form to a postix form then evaluates it.
+- **PGCD x86** (ARCHI2):
+- **A3marDarek** (POO):
 ### L3 :
 - 1
 
