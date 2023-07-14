@@ -22,7 +22,7 @@ University Of Science And Technology Houari Boumediene ([USTHB](https://www.usth
 - **MathProg** (OPM): a project for my Mathematical Programming class which combines three subjects: Primitive Recursive functions, Turing Machines and Mathematical Tasks solved using [Caml](https://caml.inria.fr).
 ### L2 :
 - **ExpEval** (ALGO2): a project written in C for my Algorithmics class which verifies the validity of an arithmetic expression, converts it from its infix form to a postix form then evaluates it.
-- **PGCD x86** (ARCHI2):
+- **PGCD x86** (ARCHI2): an Assembly 8086 script which calculate the Greatest Common Diviser of two numbers then print it one the screen with the current date & time. Made using [EMU8086](https://emu8086-microprocessor-emulator.en.softonic.com).
 - **A3marDarek** (POO):
 ### L3 :
 - 1
