@@ -23,7 +23,7 @@ University Of Science And Technology Houari Boumediene ([USTHB](https://www.usth
 ### L2 :
 - **ExpEval** (ALGO2): a project written in C for my Algorithmics class which verifies the validity of an arithmetic expression, converts it from its infix form to a postix form then evaluates it.
 - **PGCD x86** (ARCHI2): an Assembly 8086 script which calculate the Greatest Common Diviser of two numbers then print it one the screen with the current date & time. Developped using [EMU8086](https://emu8086-microprocessor-emulator.en.softonic.com).
-- **A3marDarek** (POO):
+- **A3marDarek** (POO): a project written in [Java](https://www.java.com/) which is dedicated for products, clients and orders management of a fourniture store with administration and authentification.
 ### L3 :
 - 1
 
