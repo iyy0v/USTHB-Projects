@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Generateur tableau</title>
+	</head>
+	<body>
+		<form action="http://localhost/tableau" method="post">
+
+			<label for="nbrLigne">Nombre de lignes : </label>
+			<select type="" id="nbrLigne" name="nbrLigne">
+				<option value="0" selected></option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+
+			<br/><br/>
+
+			<label for="nbrCol">Nombre de colonnes : </label>
+			<select id="nbrCol" name="nbrCol">
+				<option value="0" selected></option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+
+			<br/><br/>
+
+			<label for="bordure">Inclure une bordure ? </label>
+			<input type="radio" id="oui" name="bordure" value="1"/>
+			<label for="oui">Oui</label>
+			<input type="radio" id="non" name="bordure" value="0" checked />
+			<label for="non">Non</label>
+
+			<br/><br/>
+
+			<label for="marge">Marge interne : </label>
+			<select id="marge" name="marge">
+				<option value="" selected></option>
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+
+			<br><br>
+
+			<label for="espacement">Espacement entre cellules : </label>
+			<select id="espacement" name="espacement">
+				<option value="" selected></option>
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+			
+			<br><br>
+
+			<label for="fond">Couleur du fond : </label>
+			<input type="radio" id="blanc" name="fond" value="white" checked />
+			<label for="blanc">Blanc</label>
+			<input type="radio" id="jaune" name="fond" value="yellow"/>
+			<label for="jaune">Jaune</label>
+			<input type="radio" id="orange" name="fond" value="orange"/>
+			<label for="orange">Orange</label>
+
+			<br/><br/>
+
+			<button type="submit" id="submit" name="creer">Créer</button>
+		</form>
+	</body>
+</html>
