@@ -45,8 +45,7 @@ University Of Science And Technology Houari Boumediene ([USTHB](https://www.usth
 ### M2 :
 (Upcoming...)
 
-<br />
-Star this repo if it helped you, GOOD LUCK !
+
+
 ## Contact
 Created by [@iyy0v](https://www.ayoub-dev.com) - feel free to contact me !
-
