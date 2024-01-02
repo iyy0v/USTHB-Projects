@@ -1,0 +1,67 @@
+Program{
+    VAR{
+        STRUCT{
+            INTEGER mat;
+            INTEGER groupe;
+            FLOAT notes[5];
+            FLOAT moy;
+        } Etudiant;
+
+        STRUCT Etudiant etu[50];
+        STRUCT Etudiant Etuadm[50];
+        STRUCT Etudiant Etuajr[50];
+
+        INTEGER I, J, K;
+        CONST Nbetu = 50;
+        CONST Nbmodule = 5;
+        FLOAT Temp;
+        INTEGER Trouve;
+
+    }
+    CODE{
+        
+        %% Calculer la moyenne de chaque Etudiant
+
+        FOR(I:0:1:Nbetu){
+            Temp = 0;
+            FOR(J:0:1:Nbmodule){
+                Temp = Temp + etu[I].notes[J];
+            }
+            etu[I].moy = Temp / Nbmodule;
+        }
+        
+
+        %% Sauvegarder les matricules des etudiants admis dans un tableau
+
+        I = 0;
+        J = 0;
+        K = 0;
+
+        WHILE(I<Nbetu){
+            IF(etu[I].moy >= 10){
+                Etuadm[J] = etu[I];
+                J = J + 1;
+            } 
+            ELSE{
+                Etuajr[K] = etu[I];
+                K = K + 1;
+            }
+            I = I + 1;
+        }
+
+
+        %% Rechercher un etudiant
+
+        Trouve = 0;
+        I = 0;
+        K = 0;
+
+        WHILE((I < Nbetu) && (Trouve == 0)){
+            IF(etu[I].mat == 1672 && etu[I].groupe == 2){
+                K = I;
+                Trouve = 1;
+            }
+            I = I + 1;
+        }
+    }
+}

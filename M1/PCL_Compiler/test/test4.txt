@@ -1,0 +1,37 @@
+Pgm{
+    VAR{
+        INTEGER A;
+        INTEGER B;
+        FLOAT C;
+        FLOAT D;
+        CONST E = (-14);
+        CONST F = (-16000);
+        INTEGER array[54];
+        INTEGER i;
+
+    }
+    CODE{
+        array[10] = array[A] + array[2];
+        A = ((15/3) + B) * ((C - 10) / C) + D / 2;
+
+        IF(array[i] >= 10){
+            FOR(A:0:1:D){
+                A = D * A;
+            }
+        }
+        ELSE{
+            WHILE(A<=15 && A>=0){
+                IF(A == 4){
+                    B = 99;
+                    IF(B - D == 15){
+                        B = 0;
+                    }
+                    ELSE{
+                        A = 0;
+                    }
+                }
+            }
+            A = A + 1;
+        }
+    }
+}
