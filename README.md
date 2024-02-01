@@ -44,7 +44,7 @@ University Of Science And Technology Houari Boumediene ([USTHB](https://www.usth
 **Versions:** GCC 8.2.0 , GNU Flex 2.5.4 ,  GNU Bison 2.4.1
 
 ### M2 :
-- **Distrubuted App** (CAGL): implementation of an application that is developed and executed over a network using EJB3 technology, TCP sockets, UDP sockets and RMI via the [J2EE](https://en.wikipedia.org/wiki/Jakarta_EE) platform. The architecture of the application is the N-tier architecture containing Clients, Multiple types of Servers and a MySQL Database. You can find more details in the Project description PDF inside. <br />
+- **Distributed App** (CAGL): implementation of an application that is developed and executed over a network using EJB3 technology, TCP sockets, UDP sockets and RMI via the [J2EE](https://en.wikipedia.org/wiki/Jakarta_EE) platform. The architecture of the application is the N-tier architecture containing Clients, Multiple types of Servers and a MySQL Database. You can find more details in the Project description PDF inside. <br />
 **Versions:** Jboss AS 7.1 , WildFly 27+ , Apache Tomcat 8.5
 - **Data Analysis** (SDED): some SQL scripts exploring Distributed Data Warehouses, Request Optimization and SQL Analytics during my "Distributed Data Warehouse System" class using [Oracle Database 19c Enterprise Edition](https://www.oracle.com/database/technologies/oracle-database-software-downloads.html#db_ee).
 - **DesignPatterns** (MPDL): small Java scripts exploring and implementing some of the Software Design Patterns like Singleton, Composite, Observer, Strategy and more.
