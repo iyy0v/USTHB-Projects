@@ -30,6 +30,7 @@ University Of Science And Technology Houari Boumediene ([USTHB](https://www.usth
 - **UnixCommandsClones** (SE): refer to [this](https://github.com/iyy0v/Unix-commands-clones).
 - **TabGen** (WEB): a tiny site made using HTML and [PHP](https://www.php.net) that lets you generate a customized table by submitting a form with options.
 - **Flite** (BACHELOR THESIS): \[Redacted - University's property\].
+
 ### M1 :
 - **LiveScore** (WEB AV): a simple website about american football where you can find the history of the sport, solve a quiz about it and check out live score of ongoing matches. Made using HTML, CSS, JavaScript and XML for data storing. <br /> 
 **PS:** You will need to run a live server for the score to be real time. You can use [WAMP](https://www.wampserver.com/en/) or the VSCode [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension.
@@ -39,12 +40,14 @@ University Of Science And Technology Houari Boumediene ([USTHB](https://www.usth
 **PS:** Some of the earlier versions might have got overwritten.
 - **SQL3** (BDA): a project about the management of a database containing gyms data where I explored different aspects of SQL3 including references, nested tables, user-defined types, functions and much more using [Oracle DBXE](https://www.oracle.com/database/technologies/appdev/xe.html). I also used UML for modelisation.
 - **JUnit** (MODAL): a bunch of Java scripts for testing classes, generating logs, extracting relations between classes and more.
-- **PCL Compiler** (COMPIL2): a PCL compiler created from scratch using [C](https://www.mingw-w64.org) + [Flex](https://github.com/westes/flex) & [Bison](https://www.gnu.org/software/bison) which analyzes a PCL code, creates its Symbol Table, generates its intermediary code in a form of quadruplets, optimizes it then converts it to x86 machine code. <br /> 
+- **PCL Compiler** (COMPIL2): a PCL compiler created from scratch using [C](https://www.mingw-w64.org) + [Flex](https://github.com/westes/flex) & [Bison](https://www.gnu.org/software/bison) which analyzes a PCL code, creates its Symbol Table, generates its intermediary code in a form of quadruplets, optimizes it then converts it to x86 machine code. <br />
 **Versions:** GCC 8.2.0 , GNU Flex 2.5.4 ,  GNU Bison 2.4.1
 
 ### M2 :
-(Upcoming...)
-
+- **Distrubuted App** (CAGL): implementation of an application that is developed and executed over a network using EJB3 technology, TCP sockets, UDP sockets and RMI via the [J2EE](https://en.wikipedia.org/wiki/Jakarta_EE) platform. The architecture of the application is the N-tier architecture containing Clients, Multiple types of Servers and a MySQL Database. You can find more details in the Project description PDF inside. <br />
+**Versions:** Jboss AS 7.1 , WildFly 27+ , Apache Tomcat 8.5
+- **Data Analysis** (SDED): some SQL scripts exploring Distributed Data Warehouses, Request Optimization and SQL Analytics during my "Distributed Data Warehouse System" class using [Oracle Database 19c Enterprise Edition](https://www.oracle.com/database/technologies/oracle-database-software-downloads.html#db_ee).
+- **DesignPatterns** (MPDL): small Java scripts exploring and implementing some of the Software Design Patterns like Singleton, Composite, Observer, Strategy and more.
 
 ## Contact
 Created by [@iyy0v](https://www.ayoub-dev.com) - feel free to contact me !
